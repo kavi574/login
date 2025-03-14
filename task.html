@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <form>
+        <table>
+            <tr>
+                <th>FIRST NAME</th>
+                <td> <input type="text" name="firstname"  maxlength="20"></td>
+                <tr>
+                    <th>DATE OF BIRTH</th>
+                <td>
+                   
+                <select name="day" id="">
+                    <option>DAY</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">11</option>
+                    <option value="">12</option>
+                    <option value="">13</option>
+                    <option value="">14</option>
+                    <option value="">15</option>
+                    <option value="">16</option>
+                    <option value="">17</option>
+                    <option value="">18</option>
+                    <option value="">19</option>
+                    <option value="">20</option>
+                    <option value="">21</option>
+                    <option value="">22</option>
+                    <option value="">23</option>
+                    <option value="">24</option>
+                    <option value="">25</option>
+                    <option value="">26</option>
+                    <option value="">27</option>
+                    <option value="">28</option>
+                    <option value="">29</option>
+                    <option value="">30</option>
+                    <option value="">31</option>
+                    </select>
+            <select id="month" name="month">
+                 <option value="" disabled selected>Month</option>
+                 <option value="1">January</option>
+                 <option value="2">February</option>
+                 <option value="3">March</option>
+                 <option value="4">April</option>
+                 <option value="5">May</option>
+                 <option value="6">June</option>
+                 <option value="7">July</option>
+                 <option value="8">August</option>
+                 <option value="9">September</option>
+                 <option value="10">October</option>
+                 <option value="11">November</option>
+                 <option value="12">December</option>
+            </select>
+            
+                   <select name="year">
+                      <option>Year</option>
+                      <option>2000</option>
+                      <option>2001</option>
+                      <option>2002</option>
+                      <option>2003</option>
+                      <option>2004</option>
+                      <option>2005</option>
+                      <option>2006</option>
+                      <option>2007</option>
+                      <option>2009</option>
+                      <option>2010</option>
+                      <option>2011</option>
+                      <option>2012</option>
+                      <option>2013</option>
+                      <option>2014</option>
+                      <option>2015</option>
+                      <option>2016</option>
+                      <option>2017</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      </select>
+            </td>
+        </tr>
+ <th>Email ID</th>
+    <td><input type="email" name="email" required></td>
+</tr>
+<tr>
+    <th>Mobile Number</th>
+    <td><input type="text" name="mobile" maxlength="10" required></td>
+</tr>
+<tr>
+    <th>Gender</th>
+    <td>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </td>
+</tr>
+<tr>
+    <th>Address</th>
+    <td><textarea name="address" rows="3"></textarea></td>
+</tr>
+<tr>
+    <th>State</th>
+    <td><input type="text" name="state"></td>
+</tr>
+<tr>
+    <th>Country</th>
+    <td>India</td>
+</tr>
+<tr>
+    <th>Hobbies</th>
+    <td>
+        <input type="checkbox" name="hobby" value="Drawing"> Drawing
+        <input type="checkbox" name="hobby" value="Singing"> Singing
+        <input type="checkbox" name="hobby" value="Dancing"> Dancing
+        <input type="checkbox" name="hobby" value="Sketching"> Sketching
+        <input type="checkbox" name="hobby" value="Others"> Others
+    </td>
+</tr>
+</table>
+
+<h3>Qualification</h3>
+<table>
+<tr>
+    <th>Sl. No</th>
+    <th>Examination Board</th>
+    <th>Percentage</th>
+    <th>Year of Passing</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Class X</td>
+    <td><input type="text" name="percentage_x"></td>
+    <td><input type="text" name="year_x"></td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Class XII</td>
+    <td><input type="text" name="percentage_xii"></td>
+    <td><input type="text" name="year_xii"></td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Graduation</td>
+    <td><input type="text" name="percentage_grad"></td>
+    <td><input type="text" name="year_grad"></td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Masters</td>
+    <td><input type="text" name="percentage_masters"></td>
+    <td><input type="text" name="year_masters"></td>
+</tr>
+</table>
+<h3>Courses Applied For</h3>
+<input type="radio" name="course" value="BCA"> BCA
+<input type="radio" name="course" value="B.Com"> B.Com
+<input type="radio" name="course" value="B.Sc"> B.Sc
+<input type="radio" name="course" value="B.A"> B.A
+<br>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+    </form>
+</body>
+</html>
